@@ -13,8 +13,10 @@ const App = ()=>{
   ]);
 
    const additemHandler = newitew => {
-    setcourseGoals(courseGoals.concat(newitew));
-   }
+    //setcourseGoals(courseGoals.concat(newitew));
+    setcourseGoals((prevcourseGoals) => prevcourseGoals.concat(newitew));
+    
+   };
    
   return <div className="course-goal">
    <h2>course Goals</h2>
